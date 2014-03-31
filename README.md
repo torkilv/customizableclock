@@ -17,3 +17,6 @@ jquery
 Acknowledgements
 =================
 Idea by Julius Vidarssønn Langhoff
+
+
+This projected is licensed under the terms of the MIT license.
