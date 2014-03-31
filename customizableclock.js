@@ -2,12 +2,12 @@ var milliSecondsInRegularDay = 24 * 60 * 60 * 1000;
 
 function getSpecialTime(normalMilliSecondsPerSpecialTime) {
     var now = new Date(),
-        then = new Date(
+        midnight = new Date(
         now.getFullYear(),
         now.getMonth(),
         now.getDate(),
         0, 0, 0),
-        milliSecondsSinceMidnight = now.getTime() - then.getTime();
+        milliSecondsSinceMidnight = now.getTime() - midnight.getTime();
     return Math.floor(milliSecondsSinceMidnight / normalMilliSecondsPerSpecialTime);
 }
 
